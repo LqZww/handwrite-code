@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery</title>
+</head>
+
+<body>
+  <ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+  </ul>
+
+  <script src="./main.js"></script>
+  <script>
+    let $ = new jQuery('li')
+    console.log($);
+    console.log($.get(1));
+    $.each(el => {
+      console.log(el.nodeName);
+    })
+    $.on('click', () => {
+      console.log('click');
+    })
+
+    $.mylog('hello')
+  </script>
+</body>
+
+</html>
